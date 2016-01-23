@@ -29,5 +29,6 @@ RUN apt-get update && \
 ADD ./start.sh /start.sh
 
 RUN chmod 755 /start.sh
+RUN php5enmod mcrypt
 
 CMD ["/bin/bash", "/start.sh"]
