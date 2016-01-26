@@ -15,6 +15,7 @@ RUN apt-get update && \
     libapache2-mod-php5 \
     php-pear \
     php5-mysql \
+    php5-curl \
     php5-dev \
     php5-gd \
     php5-mcrypt \
@@ -30,5 +31,6 @@ ADD ./start.sh /start.sh
 
 RUN chmod 755 /start.sh
 RUN php5enmod mcrypt
+RUN php5enmod curl
 
 CMD ["/bin/bash", "/start.sh"]
