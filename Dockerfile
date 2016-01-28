@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:wily
 MAINTAINER Leonel Baer <leonel@lysender.com>
 
 # Install  packages
