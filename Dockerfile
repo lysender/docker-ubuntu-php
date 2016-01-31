@@ -12,7 +12,6 @@ RUN apt-get update && \
     php5-cli \
     php5-common \
     php5-fpm \
-    libapache2-mod-php5 \
     php-pear \
     php5-mysql \
     php5-curl \
