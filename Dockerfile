@@ -4,10 +4,7 @@ MAINTAINER Leonel Baer <leonel@lysender.com>
 # Install  packages
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
-    apt-get -y install mysql-client \
-    git \
-    tree \
-    php5 \
+    apt-get -y install php5 \
     php5-cgi \
     php5-cli \
     php5-common \
@@ -19,8 +16,6 @@ RUN apt-get update && \
     php5-gd \
     php5-mcrypt \
     php5-xmlrpc \
-    psmisc \
-    net-tools \
     curl \
     sqlite3 \
     sendmail && apt-get clean
